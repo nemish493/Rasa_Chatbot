@@ -1,0 +1,276 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: inquire_overview
+  examples: |
+    - Can you provide a summary of what's offered in the language and elective courses?
+    - I'm looking for a general overview of the language and elective courses available. Could you help?
+    - What kinds of courses are included in the language and electives category?
+    - general summary of language and elective courses
+    - broad overview of course options
+    - range of courses in language and electives
+
+- intent: inquire_overview_awp
+  examples: |
+    - Can you tell me more about the AWP (Academic Writing Program) in the language and electives department?
+    - What are the features and offerings of the AWP in the language and electives department?
+    - How does the AWP enhance language and elective studies?
+    - details on AWP in language department
+    - AWP offerings and benefits
+    - exploring AWP in electives department
+
+- intent: inquire_elective_overview
+  examples: |
+    - What is the range and types of elective courses available this semester?
+    - How are credits calculated for elective courses across various departments?
+    - Is it possible to undertake an independent study as an elective, and how is credit allocation done?
+    - What are the limits on the number of electives I can enroll in per semester?
+    - variety and credit values of elective courses
+    - cross-department elective course credits
+    - independent study projects as electives
+    - elective course enrollment limitations
+
+- intent: inquire_compulsory_overview
+  examples: |
+    - What compulsory courses are required for my degree program this semester, and what are their credit values?
+    - Are there mandatory courses that I need to take from other departments, and how do they contribute to my degree?
+    - How does the university handle credit allocation for compulsory interdisciplinary courses?
+    - What are the guidelines on the maximum and minimum number of compulsory courses per semester?
+    - compulsory course offerings and credits
+    - interdisciplinary mandatory course credits
+    - credit allocation for compulsory courses
+    - limits on compulsory course enrollment
+
+- intent: inquire_lecture_schedule
+  examples: |
+    - Can you provide the timetable for elective lectures this semester?
+    - What are the time slots for the language courses offered?
+    - How can I find the lecture schedule for elective subjects?
+    - schedule for elective lectures
+    - timing of language course sessions
+    - elective course timetable
+
+- intent: inquire_lecture_info
+  examples: |
+    - What types of lectures are offered in the language and electives department?
+    - Can you provide details about the different lecture topics available?
+    - What are the latest additions to the lecture series in language and electives?
+    - overview of lecture offerings
+    - lecture topics in language and electives
+    - new lectures in language department
+
+- intent: inquire_lecture_exam_info
+  examples: |
+    - What exams are associated with language and elective lectures?
+    - How are the exams structured for language and elective courses?
+    - What type of assessment is used for language and elective lectures?
+    - examination details for lectures
+    - exam formats in language and electives
+    - assessment types for elective courses
+
+- intent: inquire_lecture_exam_requirements
+  examples: |
+    - What are the requirements to pass exams in language and elective lectures?
+    - Can you outline the grading criteria for language and elective course exams?
+    - What preparations are recommended for language and elective lecture exams?
+    - passing criteria for lecture exams
+    - grading system in language and electives
+    - exam preparation guidelines
+
+- intent: inquire_language_offer_info
+  examples: |
+    - Can you provide detailed information about the language courses?
+    - What learning resources are available for language courses?
+    - What levels of proficiency do the language courses cater to?
+    - details on language courses
+    - resources for language learning
+    - proficiency levels in language courses
+
+- intent: inquire_language_info
+  examples: |
+    - Can you provide detailed information about the language courses?
+    - What learning resources are available for language courses?
+    - What levels of proficiency do the language courses cater to?
+    - details on language courses
+    - resources for language learning
+    - proficiency levels in language courses?
+
+- intent: inquire_learn_german_info
+  examples: |
+    - What resources are available for learning German?
+    - Are there any special programs or courses for German language learners?
+    - Can you provide details on beginner-level German courses?
+    - learning German language basics
+    - courses for German language beginners
+    - resources for German language learning
+
+- intent: inquire_learn_german_semester_course
+  examples: |
+    - What German language courses are offered this semester?
+    - Are there beginner or advanced German classes available during the semester?
+    - Can you give information on the duration and schedule of German semester courses?
+    - semester-long German courses
+    - schedule of German classes this semester
+    - German language course offerings
+
+- intent: inquire_learn_german_intensive_course
+  examples: |
+    - Are there intensive German language courses available?
+    - What options exist for accelerated German language learning?
+    - Can you provide information on intensive German courses, including duration and intensity?
+    - intensive German language programs
+    - accelerated learning for German language
+    - details on intensive German courses
+
+- intent: inquire_intensive_language_courses
+  examples: |
+    - Tell me about intensive language courses.
+    - Are there any special language programs?
+    - How many language courses are offered this semester, and what are their credit values?
+    - language program
+    - credits for the language course
+    - intensive courses
+    - intensive language courses
+
+- intent: inquire_intensive_language_registration
+  examples: |
+    - How do I register for intensive language courses?
+    - What's the process for enrolling in a special language program?
+    - Can you provide information on registration for language courses this semester?
+    - registration for intensive language courses
+    - enrolling in language programs
+    - steps to register for language courses
+
+- intent: inquire_intensive_language_fee
+  examples: |
+    - What are the fees for intensive language courses?
+    - Can you detail the cost of enrolling in special language programs?
+    - How much do I need to pay for a language course this semester?
+    - fee structure for language courses
+    - costs associated with intensive language programs
+    - tuition for intensive language courses
+
+- intent: inquire_intensive_language_exam_result
+  examples: |
+    - How are exam results communicated for intensive language courses?
+    - What's the process for receiving exam results in special language programs?
+    - Can you provide details on exam outcomes for language courses?
+    - accessing exam results for language courses
+    - results for intensive language exams
+    - checking grades for language program exams
+
+- intent: inquire_elective
+  examples: |
+    - What elective courses are available this semester?
+    - Are there any unique or interesting electives I should consider?
+    - Can you provide a list of elective subjects offered?
+    - choosing elective courses
+    - options for elective subjects
+    - elective course recommendations
+
+- intent: inquire_course_selection
+  examples: |
+    - How do I select courses for the upcoming semester?
+    - What should I consider when choosing my courses?
+    - Can you guide me through the course selection process?
+    - process for selecting courses
+    - advice on choosing the right courses
+    - course selection assistance
+
+- intent: inquire_contact
+  examples: |
+    - Who should I contact for academic advising?
+    - What is the contact information for the admissions office?
+    - Where can I find the contact details of the faculty members?
+    - finding department contacts
+    - contact details for university services
+    - how to get in touch with academic staff

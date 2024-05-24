@@ -1,0 +1,179 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inquire_overview
+  - inquire_overview_awp
+  - inquire_elective_overview
+  - inquire_compulsory_overview
+  - inquire_lecture_schedule
+  - inquire_lecture_info
+  - inquire_lecture_exam_info
+  - inquire_lecture_exam_requirements
+  - inquire_language_offer_info
+  - inquire_language_info
+  - inquire_learn_german_info
+  - inquire_learn_german_semester_course
+  - inquire_learn_german_intensive_course
+  - inquire_intensive_language_courses
+  - inquire_intensive_language_registration
+  - inquire_intensive_language_fee
+  - inquire_intensive_language_exam_result
+  - inquire_elective
+  - inquire_course_selection
+  - inquire_contact
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Technische Hochschule Deggendorf."
+
+  utter_overview:
+  - text: "In most degree programs, students must complete specific Additional Academic Qualification (AWP) subjects and compulsory language courses, each only once, by the end of their studies. 
+    Information about scheduling and requirements is available in the study and examination regulations. 
+    The focus is on completing all required courses, not the timing."
+
+  utter_overview_awp:
+  - text: "To get more info on AWP subject and compulsory language courses: [here](https://www.th-deg.de/Studierende/AWP-Sprachkurse/Uebersicht_AWP-_und_Sprachenwahl_DEG.pdf)"
+
+  utter_elective_overview:
+  - text: "An elective (AWP) is a compulsory elective subject of a general academic nature prescribed by the study and examination regulations, which must be successfully completed. 
+         You can choose from the following three major areas:
+         1. Methodological and Social Skills
+         2. Orientation knowledge
+         3. Languages"
+
+  utter_compulsory_overview:
+  - text: "Like an elective (AWP), a compulsory language course is prescribed in the study and examination regulations for the respective course of study and must be successfully completed by the end of the studies. 
+        It comprises 2 - 4 ECTS points and counts to the overall grade point average."
+
+  utter_lecture_schedule:
+  - text: "The lecture schedules are updated every semester and can be found on our website.
+    Follow the given link to see schedules for winter semester 2023/24 elective and language classes:
+    [here](https://www.th-deg.de/Studierende/AWP-Sprachkurse/Vorlesungsplan_DEG.pdf)"
+
+  utter_lecture_info:
+  - text: "compulsory attendance
+    A language flourishes when it is heard and spoken. Therefore, all language courses require at least 75% lecture attendance to be permitted to the examination. 
+    Please read the general exam regulations section 4 art. 3.
+    75% attendance is
+    1. 3 absent times* for courses with 2 weekly semester hours
+    2. 6 absent times* for courses with 4 weekly semester hours
+    3. 9 absent times* for courses with 6 weekly semester hours
+    *One absent time = 2 teaching units = 2 x 45 minutes"
+
+  utter_lecture_exam_info:
+  - text: "Dates for examination registration are announced on the DIT website. As with other examinations, 
+    registration takes place via the Primuss portal.[here](https://www.primuss.de/portal-thd)
+    Please pay attention to the type of crediting when registering:
+    AWP (2ECTS), compulsory language course (2/4 ECTS), voluntary subjects (no ECTS). 
+    A subsequent change is not possible!"
+
+  utter_lecture_exam_requirements:
+  - text: "A minimum of 75% attendance is required for admission to sit an exam, as stated in the general exam regulations section 4 paragraph no.3."
+
+  utter_language_offer_info:
+    - text: "A language flourishes when it is heard and spoken. All language courses require at least 75% lecture attendance to enter the exam. 
+    Please read the general exam regulations § 4 paragraph no.3.
+    75% attendance is …
+    1. 3 absent times* for courses with  2 weekly semester hours
+    2. 6 absent times* for courses with 4 weekly semester hours
+    3. 9 absent times* for courses with 6 weekly semester hours
+    *One absent time = 2 Teaching Units = 2 x 45 minutes"
+
+  utter_language_offer:
+    - text: "Language offered by us are: Chinese, English, Italian, French, Portuguese, Swedish, Spanish, Russian, Czech"
+
+  utter_learn_german_info:
+    - text: "We have an extensive range of courses at levels A1 - C1, 
+    enabling you to develop and expand your German language skills and knowledge of the German culture."
+
+  utter_learn_german_semester_courses:
+    - text: "In addition to regular language courses emphasizing reading, listening, writing, and speaking skills, optional courses in grammar, pronunciation, text production, and conversation are available. 
+    Alternative methods like the THEATRE or Tandem program also enhance German language skills. 
+    Non-students are welcome in regular classes if space permits, starting simultaneously with students at the semester's beginning.
+    Interested individuals should contact Tanja Mertadana at the Language and Electives Centre."
+
+  utter_learn_german_intensive_courses:
+    - text: "Two-week intensive language courses are offered during lecture-free periods throughout the academic year. 
+    These courses cover the content equivalent to a 4-SWS regular semester course, amounting to approximately 60 teaching units of 45 minutes each. 
+    Generally, they run daily from 8 am to 1 pm, concluding with an exam on the last day. 
+    For more information, visit the 'Intensive Language Courses - Learning German' section."
+
+  utter_intensive_language_course:
+    - text: "german as a foreign language
+    Two-week intensive courses regularly take place in lecture-free periods throughout the academic year. 
+    The content of a 4-SWS regular semester course is covered, which corresponds to about 60 teaching units of 45 minutes each. 
+    Generally, the intensive courses take place daily (not on Saturdays and Sundays), with an examination on the last course day.
+    Follow the link to know more [here](https://www.th-deg.de/Studierende/AWP-Sprachkurse/Intensivsprachkurse_DaF_DEG.pdf)"
+
+  utter_intensive_language_registration:
+    - text: "Registration is possible via the following link:
+    [here](https://pmit-ext.th-deg.de/awp/login)
+    Courses will be offered only to groups of 15 participants or more. Places are limited."
+
+  utter_intensive_language_fee:
+    - text: "2 SWS-courses:
+      € 39 per week for students (including students from other universities) school pupils and apprentices.
+      € 120 per week for non-students, including exam registration and results. Non-students will receive a receipt on payment.
+ 
+      4 SWS-courses:
+      € 78 per week for students (including students from other universities) school pupils and apprentices.
+      € 240 per week for non-students, including exam registration and results. Non-students will receive a receipt on payment.
+      
+      More information will be provided in the confirmation email. The required course material is not included in the fees."
+
+  utter_intensive_language_exam_result:
+    - text: "Grades are automatically printed on your grade sheet approx. 4 weeks after completion of the intensive course.
+      Registration is automatic and does not require prior exam registration via Primuss
+      Portal link [here](https://www.primuss.de/portal-thd).
+      Upon passing the exam, guest students receive a certificate (by email or post) stating the exam grade."
+
+  utter_electives:
+    - text: "The range of courses can vary from semester to semester."
+
+  utter_course_selection:
+    - text: "Before the semester begins, you can register for compulsory language courses, AWP (elective courses), as well as voluntary subsidiary subjects.
+    Should you be unsure whether and when you have to choose which courses, please have a look at the overviews of languages and electives.
+    Please note that courses can only be offered with a minimum of 15 participants."
+
+  utter_contact:
+    - text: "For more question you can contact AWP CENTRE [here](sprachenzentrum@th-deg.de)"
+
+actions:
+  - action_overview
+  - action_overview_awp
+  - action_elective_overview
+  - action_compulsory_overview
+  - action_lecture_schedule
+  - action_lecture_exam_info
+  - action_language_offer
+  - action_intensive_language_course
+  - action_course_selection
+  - action_contact
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

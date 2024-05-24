@@ -1,0 +1,202 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Language and electives overview
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_overview
+  - action: utter_overview
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Language and electives overview AWP
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_overview_awp
+  - action: action_overview_awp
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Language and electives overview (elective and compulsory info)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_elective_overview
+  - action: utter_elective_overview
+  - intent: inquire_compulsory_overview
+  - action: utter_compulsory_overview
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Lecture schedule inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_lecture_schedule
+  - action: action_lecture_schedule
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Lecture schedule info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_lecture_info
+  - action: utter_lecture_info
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Lecture schedule exam
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_lecture_exam_info
+  - action: action_lecture_exam_info
+  - intent: inquire_lecture_exam_requirements
+  - action: utter_lecture_exam_requirements
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Language offer info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_language_offer_info
+  - action: action_language_offer
+  - intent: inquire_language_offer_info
+  - action: utter_language_offer_info
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Learn German
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_learn_german_info
+  - action: utter_learn_german_info
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Learn German courses
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_learn_german_info
+  - action: utter_learn_german_info
+  - action: utter_did_that_help
+  - intent: inquire_learn_german_semester_course
+  - action: utter_learn_german_semester_courses
+  - intent: inquire_learn_german_intensive_course
+  - action: utter_learn_german_intensive_courses
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Intensive Language Course info, registration and fee
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_intensive_language_courses
+  - action: action_intensive_language_course
+  - intent: inquire_intensive_language_registration
+  - action: utter_intensive_language_registration
+  - intent: inquire_intensive_language_fee
+  - action: utter_intensive_language_fee
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Intensive Language Course Exam info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_intensive_language_courses
+  - action: action_intensive_language_course
+  - intent: inquire_intensive_language_exam_result
+  - action: utter_intensive_language_exam_result
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Elective Course Info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_elective
+  - action: utter_electives
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Course Selection Info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: inquire_course_selection
+  - action: action_course_selection
+  - intent: inquire_contact
+  - action: action_contact
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
